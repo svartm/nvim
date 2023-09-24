@@ -1,5 +1,6 @@
-tags
-test.sh
-.luarc.json
-nvim
 lazy-lock.json
+doc
+old_init.lua
+old_README.md
+lua/custom
+lua/kickstart
