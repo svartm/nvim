@@ -1,13 +1,12 @@
--- DELETE THIS
 local colors = {
-  black        = '#050505',
+  black        = '#000000',
   white        = '#bbbbbb',
-  red          = '#dd8da6',
-  green        = '#64b27d',
-  blue         = '#5a82a6',
-  yellow       = '#ab90c2', -- light purple
-  gray         = '#555555',
-  darkgray     = '#333333',
+  red          = '#ba86a6',
+  green        = '#588c7b',
+  blue         = '#538383',
+  yellow       = '#7c74be', -- purple
+  gray         = '#3a3a3a',
+  darkgray     = '#262626',
   lightgray    = '#808080',
   inactivegray = '#707070',
 }
