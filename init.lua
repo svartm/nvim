@@ -5,7 +5,11 @@ require('oexi.core')
 require('oexi.lazy')
 
 -- vim.cmd "colorscheme oexidark"
-vim.cmd "colorscheme boo"
+-- vim.cmd "colorscheme boo"
+require('boo-colorscheme').use({
+  italic = false,
+  theme = 'oexi'
+})
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

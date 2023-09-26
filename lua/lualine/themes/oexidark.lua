@@ -1,45 +1,46 @@
 local colors = {
-  black        = '#000000',
-  white        = '#bbbbbb',
+  black        = '#09090b',
+  white        = '#ebebeb',
   red          = '#ba86a6',
-  green        = '#588c7b',
+  green        = '#64a37d',
   blue         = '#538383',
   yellow       = '#7c74be', -- purple
-  gray         = '#3a3a3a',
-  darkgray     = '#262626',
+  cyan         = '#63b0b0',
+  gray         = '#332933',
+  darkgray     = '#202027',
   lightgray    = '#808080',
   inactivegray = '#707070',
 }
 return {
   normal = {
-    a = {bg = colors.gray, fg = colors.inactivegray, gui = 'bold'},
-    b = {bg = colors.darkgray, fg = colors.white},
-    c = {bg = colors.darkgray, fg = colors.gray}
+    a = {bg = colors.darkgray, fg = colors.inactivegray, gui = 'bold'},
+    b = {bg = colors.gray, fg = colors.white},
+    c = {bg = colors.darkgray, fg = colors.cyan}
   },
   insert = {
     a = {bg = colors.blue, fg = colors.black, gui = 'bold'},
-    b = {bg = colors.darkgray, fg = colors.white},
-    c = {bg = colors.darkgray, fg = colors.gray}
+    b = {bg = colors.gray, fg = colors.white},
+    c = {bg = colors.blue, fg = colors.black}
   },
   visual = {
     a = {bg = colors.yellow, fg = colors.black, gui = 'bold'},
-    b = {bg = colors.darkgray, fg = colors.white},
-    c = {bg = colors.darkgray, fg = colors.gray}
+    b = {bg = colors.gray, fg = colors.white},
+    c = {bg = colors.darkgray, fg = colors.yellow}
   },
   replace = {
     a = {bg = colors.red, fg = colors.black, gui = 'bold'},
-    b = {bg = colors.darkgray, fg = colors.white},
-    c = {bg = colors.darkgray, fg = colors.gray}
+    b = {bg = colors.gray, fg = colors.white},
+    c = {bg = colors.darkgray, fg = colors.red}
   },
   command = {
     a = {bg = colors.green, fg = colors.black, gui = 'bold'},
-    b = {bg = colors.darkgray, fg = colors.white},
-    c = {bg = colors.darkgray, fg = colors.gray}
+    b = {bg = colors.gray, fg = colors.white},
+    c = {bg = colors.darkgray, fg = colors.green}
   },
   inactive = {
     a = {bg = colors.darkgray, fg = colors.inactivegray, gui = 'bold'},
-    b = {bg = colors.darkgray, fg = colors.inactivegray},
-    c = {bg = colors.darkgray, fg = colors.gray}
+    b = {bg = colors.gray, fg = colors.inactivegray},
+    c = {bg = colors.darkgray, fg = colors.lightgray}
   }
 }
 -- require('lualine').setup {options = {theme = 'oexidark'}}

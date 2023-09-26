@@ -7,8 +7,15 @@ return {
 		--end,
 	--}
 	{
-		'rockerBOO/boo-colorscheme-nvim',
+		'svartbm1/boo-colorscheme-nvim',
+		--name = 'boo-oexi',
 		priority = 1000,
+		config = function()
+			require('boo-colorscheme').use({
+				italic = false,
+				theme = 'crimson-moonlight'
+			})
+		end
 	},
 	{
 		'nyoom-engineering/oxocarbon.nvim',

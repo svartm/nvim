@@ -12,9 +12,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({{import = 'oexi.plugins'}, {import = 'oexi.plugins.lsp'}}, {
-	install = {
-		colorscheme = { 'onedark' },
-	},
+	-- install = {
+	-- 	 colorscheme = { 'boo-oexi' },
+	-- },
 	checker = {
 		enabled = true,
 		notify = false,
