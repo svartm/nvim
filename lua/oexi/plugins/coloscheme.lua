@@ -7,7 +7,7 @@ return {
 		--end,
 	--}
 	{
-		'svartbm1/boo-colorscheme-nvim',
+		'svartm/boo-colorscheme-nvim',
 		--name = 'boo-oexi',
 		priority = 1000,
 		config = function()
