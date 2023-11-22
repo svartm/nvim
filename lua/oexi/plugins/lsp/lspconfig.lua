@@ -56,12 +56,16 @@ return {
     end
     local servers = {
       -- Add LSP servers here
+      html = {},
+      tsserver = {},
+      pyre = {},
       lua_ls = {
         Lua = {
           workspace = { checkThirdParty = false },
           telemetry = { enable = false },
         },
       },
+      rust_analyzer = {},
     }
     neodev.setup()
     local capabilities = vim.lsp.protocol.make_client_capabilities()
