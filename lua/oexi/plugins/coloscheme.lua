@@ -17,6 +17,10 @@ return {
 			})
 		end
 	},
+	{		
+		'Mofiqul/dracula.nvim',
+		priority = 1000,
+	},
 	{
 		'nyoom-engineering/oxocarbon.nvim',
 		priority = 1000,
