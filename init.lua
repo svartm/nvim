@@ -1,15 +1,12 @@
---  You can explore or search through `:help lua-guide`
---  - https://neovim.io/doc/user/lua-guide.html
+require("config.lsp")
+require("config.options")
+require("config.keymaps")
+require("config.autocmds")
 
-require('oexi.core')
-require('oexi.lazy')
+require("config.lazy")
 
--- vim.cmd "colorscheme oexidark"
--- vim.cmd "colorscheme boo"
-require('boo-colorscheme').use({
-  italic = false,
-  theme = 'oexi'
-})
-
--- The line beneath this is called `modeline`. See `:help modeline`
+--require('boo-colorscheme').use({
+--  italic = false,
+--  theme = 'oexi'
+--})
 -- vim: ts=2 sts=2 sw=2 et
