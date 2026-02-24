@@ -1,6 +1,6 @@
 -- treesitter highlights
 vim.api.nvim_create_autocmd('FileType', {
-  pattern = { 'markdown', 'html', 'astro' },
+  pattern = { 'markdown', 'html', 'astro', 'svelte' },
   callback = function() vim.treesitter.start() end,
 })
 
