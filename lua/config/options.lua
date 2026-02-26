@@ -7,6 +7,11 @@ vim.o.shiftwidth = 2
 vim.o.expandtab = true
 vim.o.autoindent = true
 
+-- line wrapping options:
+vim.o.wrap = true
+vim.o.linebreak = true
+
+
 vim.o.hlsearch = false
 
 vim.o.number = true --vi.wo?
