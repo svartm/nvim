@@ -8,7 +8,11 @@ vim.o.expandtab = true
 vim.o.autoindent = true
 
 vim.o.hlsearch = false
+
 vim.o.number = true --vi.wo?
+vim.o.relativenumber = true
+vim.o.ruler = true
+
 vim.o.mouse = 'a'
 vim.o.showmode = false
 vim.o.clipboard = 'unnamedplus' -- to cut startup time, consider scheduling this

@@ -7,7 +7,7 @@ return {
   build = ':TSUpdate',
   config = function()
     require('nvim-treesitter').setup{
-      require'nvim-treesitter'.install { 'rust', 'markdown', 'markdown_inline', 'html', 'astro', 'javascript', 'typescript', 'css', 'svelte', 'scss'}
+      require'nvim-treesitter'.install { 'rust', 'markdown', 'markdown_inline', 'html', 'astro', 'javascript', 'typescript', 'css', 'svelte', 'scss', 'latex', 'yaml'}
     }
   end
 }
