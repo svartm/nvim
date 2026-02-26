@@ -15,6 +15,7 @@ return {
             "hrsh7th/cmp-cmdline",
             "saadparwaiz1/cmp_luasnip",--autocomplete from luasnip
             "L3MON4D3/LuaSnip",
+            "folke/lazydev.nvim", --completions from lazydev
         },
 
         config = function()
@@ -77,6 +78,7 @@ return {
                 sources = cmp.config.sources({
                     { name = 'luasnip' },
                     { name = 'buffer'},
+                    { name = 'lazydev'},
                 }),
             })
             cmp.setup.cmdline({ '/', '?' }, {

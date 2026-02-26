@@ -6,6 +6,9 @@ return {
     init = function()
       --global vimtex settings
       vim.g.vimtex_imaps_enabled = 0 --i.e., disable them
+      vim.g.vimtex_compiler_latexmk = {
+        aux_dir = 'aux', -- put aux files in another directory
+      }
       --vimtex_view_settings
       vim.g.vimtex_view_method = 'zathura' -- change this, depending on what you want to use..sumatraPDF, or skim, or zathura, or...
       vim.g.vimtex_view_general_options = '-reuse-instance -forward-search @tex @line @pdf'
