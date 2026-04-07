@@ -103,6 +103,22 @@ now_if_args(function()
   -- vim.lsp.enable({
   --   -- For example, if `lua-language-server` is installed, use `'lua_ls'` entry
   -- })
+
+  -- Add here to enable installed servers:
+  vim.lsp.enable({
+    -- 'clangd',
+    -- 'denols',
+    -- 'docker_compose_language_service',
+    -- 'emmet_ls',
+    'lua_ls',
+    -- 'rust-analyzer',
+    -- 'svelte',
+    -- 'ts_ls',
+    -- 'vimls',
+    -- 'yamlls',
+    'texlab',
+  })
+
 end)
 
 -- Formatting =================================================================
@@ -156,6 +172,10 @@ later(function() add({ 'https://github.com/rafamadriz/friendly-snippets' }) end)
 --   add({ 'https://github.com/mason-org/mason.nvim' })
 --   require('mason').setup()
 -- end)
+now_if_args(function()
+  add({ 'https://github.com/mason-org/mason.nvim' })
+  require('mason').setup()
+end)
 
 -- Beautiful, usable, well maintained color schemes outside of 'mini.nvim' and
 -- have full support of its highlight groups. Use if you don't like 'miniwinter'

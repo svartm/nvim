@@ -513,6 +513,7 @@ end)
 -- - `:h MiniIndentscope.gen_animation` - available animation rules
 later(function() require('mini.indentscope').setup() end)
 
+-- TODO: set up better key for jump.
 -- Jump to next/previous single character. It implements "smarter `fFtT` keys"
 -- (see `:h f`) that work across multiple lines, start "jumping mode", and
 -- highlight all target matches. Example usage:

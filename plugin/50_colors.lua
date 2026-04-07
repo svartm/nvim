@@ -2,9 +2,8 @@
 -- │ Colorscheme │
 -- └─────────────┘
 --
--- Added this file to split set-up for colors and theme.
---
--- Use this file to install and configure colorscheme and related plugins.
+-- Added this file to set-up colors and theme.
+-- Use this file to install and configure colorschemes and related plugins.
 
 -- Make concise helpers for installing/adding plugins in two stages
 local add = vim.pack.add
