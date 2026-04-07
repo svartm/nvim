@@ -19,11 +19,39 @@
 -- The next part (until `-- stylua: ignore end`) is aligned manually for easier
 -- reading. Consider preserving this or remove `-- stylua` lines to autoformat.
 
--- General ====================================================================
+-- Custom ======================================================================
+
+-- Added
+vim.o.clipboard      = 'unnamedplus' -- Use system clipboard.
+vim.o.confirm        = true        -- Ask when closing unsaved buffers.
+vim.o.hlsearch       = false       -- Don't highlight every occurence.
+vim.o.relativenumber = true        -- Show relative line number.
+vim.o.inccommand     = 'split'     -- Preview substitutions while typing.
+vim.o.scrolloff      = 4           -- Minimum lines above and below cursor.
+
+-- Changed
+vim.o.ruler          = true        -- Show cursor coordinates
+vim.o.wrap           = true        -- Visually wrap lines (toggle with \w)
+vim.o.completeopt    = 'menu,menuone,noselect,preview' -- Completion options.
+vim.o.winborder      = 'rounded'   -- Border style for floating windows.
+
+-- Other options from old config, uncomment if needed:
+-- vim.o.termguicolors  = true
+-- vim.o.breakindent    = true
+-- vim.o.undofile       = true
+-- vim.o.signcolumn     = 'yes'
+-- vim.o.updatetime     = 250
+-- vim.o.timeoutlen     = 300
+
+-- Highlight text when yanked (copied)
+local f = function() vim.hl.on_yank() end
+Config.new_autocmd('TextYankPost', nil, f, 'Highlight text on yank')
+
+-- MinMax General ==============================================================
 vim.g.mapleader = ' ' -- Use `<Space>` as <Leader> key
 
 vim.o.mouse       = 'a'            -- Enable mouse
-vim.o.mousescroll = 'ver:25,hor:6' -- Customize mouse scroll
+-- vim.o.mousescroll = 'ver:25,hor:6' -- Customize mouse scroll
 vim.o.switchbuf   = 'usetab'       -- Use already opened buffers when switching
 vim.o.undofile    = true           -- Enable persistent undo
 
@@ -36,7 +64,7 @@ if vim.fn.exists('syntax_on') ~= 1 then vim.cmd('syntax enable') end
 -- UI =========================================================================
 vim.o.breakindent    = true       -- Indent wrapped lines to match line start
 vim.o.breakindentopt = 'list:-1'  -- Add padding for lists (if 'wrap' is set)
-vim.o.colorcolumn    = '+1'       -- Draw column on the right of maximum width
+-- vim.o.colorcolumn    = '+1'       -- Draw column on the right of maximum width
 vim.o.cursorline     = true       -- Enable current line highlighting
 vim.o.linebreak      = true       -- Wrap lines at 'breakat' (if 'wrap' is set)
 vim.o.list           = true       -- Show helpful text indicators
@@ -44,15 +72,15 @@ vim.o.number         = true       -- Show line numbers
 vim.o.pumborder      = 'single'   -- Use border in popup menu
 vim.o.pumheight      = 10         -- Make popup menu smaller
 vim.o.pummaxwidth    = 100        -- Make popup menu not too wide
-vim.o.ruler          = false      -- Don't show cursor coordinates
+-- vim.o.ruler          = false      -- Don't show cursor coordinates
 vim.o.shortmess      = 'CFOSWaco' -- Disable some built-in completion messages
 vim.o.showmode       = false      -- Don't show mode in command line
 vim.o.signcolumn     = 'yes'      -- Always show signcolumn (less flicker)
 vim.o.splitbelow     = true       -- Horizontal splits will be below
 vim.o.splitkeep      = 'screen'   -- Reduce scroll during window split
 vim.o.splitright     = true       -- Vertical splits will be to the right
-vim.o.winborder      = 'single'   -- Use border in floating windows
-vim.o.wrap           = false      -- Don't visually wrap lines (toggle with \w)
+-- vim.o.winborder      = 'single'   -- Use border in floating windows
+-- vim.o.wrap           = false      -- Don't visually wrap lines (toggle with \w)
 
 vim.o.cursorlineopt  = 'screenline,number' -- Show cursor line per screen line
 
@@ -89,7 +117,7 @@ vim.o.formatlistpat = [[^\s*[0-9\-\+\*]\+[\.\)]*\s\+]]
 
 -- Built-in completion
 vim.o.complete        = '.,w,b,kspell'                  -- Use less sources
-vim.o.completeopt     = 'menuone,noselect,fuzzy,nosort' -- Use custom behavior
+-- vim.o.completeopt     = 'menuone,noselect,fuzzy,nosort' -- Use custom behavior
 vim.o.completetimeout = 100                             -- Limit sources delay
 
 -- Autocommands ===============================================================
